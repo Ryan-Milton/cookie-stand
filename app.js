@@ -20,7 +20,7 @@ function Store(storeLocation, minCustomers, maxCustomers, cookiesPerCustomer) {
   };
 
   this.cookiesPerHourCalc = function() {
-    for(let i = 0; i < 16; i++) {
+    for(let i = 0; i < 15; i++) {
       this.cookiesPerHour.push((Math.floor(this.randomCustomerPerHour() * this.cookiesPerCustomer)));
     }
   };
