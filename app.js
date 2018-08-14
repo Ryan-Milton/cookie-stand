@@ -16,7 +16,7 @@ pike.randomCustomerPerHour = function() {
 };
 
 pike.cookiesPerHourCalc = function() {
-  for(var i = 0; i < 15; i++) {
+  for(var i = 0; i < 16; i++) {
     return (Math.floor(this.randomCustomerPerHour() * this.cookiesPerCustomer));
   }
 };
@@ -40,11 +40,11 @@ pike.render = function() {
   pikeUlEl.appendChild(liEl);
 };
 
-for(var i = 0; i < 14; i++) {
+for(var i = 0; i < 16; i++) {
   pike.cookiesPerHour.push(pike.cookiesPerHourCalc());
 }
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   pike.customerPerHour.push(pike.randomCustomerPerHour());
 }
 
@@ -66,7 +66,7 @@ seaTac.randomCustomerPerHour = function() {
 };
 
 seaTac.cookiesPerHourCalc = function() {
-  for(var i = 0; i < 15; i++) {
+  for(var i = 0; i < 16; i++) {
     return (Math.floor(this.randomCustomerPerHour() * this.cookiesPerCustomer));
   }
 };
@@ -90,11 +90,11 @@ seaTac.render = function() {
   seaTacUlEl.appendChild(liEl);
 };
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   seaTac.cookiesPerHour.push(seaTac.cookiesPerHourCalc());
 }
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   seaTac.customerPerHour.push(seaTac.randomCustomerPerHour());
 }
 
@@ -116,7 +116,7 @@ seattleCenter.randomCustomerPerHour = function() {
 };
 
 seattleCenter.cookiesPerHourCalc = function() {
-  for(var i = 0; i < 15; i++) {
+  for(var i = 0; i < 16; i++) {
     return (Math.floor(this.randomCustomerPerHour() * this.cookiesPerCustomer));
   }
 };
@@ -140,11 +140,11 @@ seattleCenter.render = function() {
   seattleCenterUlEl.appendChild(liEl);
 };
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   seattleCenter.cookiesPerHour.push(seattleCenter.cookiesPerHourCalc());
 }
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   seattleCenter.customerPerHour.push(seattleCenter.randomCustomerPerHour());
 }
 
@@ -166,7 +166,7 @@ capitolHill.randomCustomerPerHour = function() {
 };
 
 capitolHill.cookiesPerHourCalc = function() {
-  for(var i = 0; i < 15; i++) {
+  for(var i = 0; i < 16; i++) {
     return (Math.floor(this.randomCustomerPerHour() * this.cookiesPerCustomer));
   }
 };
@@ -190,11 +190,11 @@ capitolHill.render = function() {
   capitolHillUlEl.appendChild(liEl);
 };
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   capitolHill.cookiesPerHour.push(capitolHill.cookiesPerHourCalc());
 }
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   capitolHill.customerPerHour.push(capitolHill.randomCustomerPerHour());
 }
 
@@ -216,7 +216,7 @@ alkiBeach.randomCustomerPerHour = function() {
 };
 
 alkiBeach.cookiesPerHourCalc = function() {
-  for(var i = 0; i < 15; i++) {
+  for(var i = 0; i < 16; i++) {
     return (Math.floor(this.randomCustomerPerHour() * this.cookiesPerCustomer));
   }
 };
@@ -240,11 +240,11 @@ alkiBeach.render = function() {
   alkiBeachUlEl.appendChild(liEl);
 };
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   alkiBeach.cookiesPerHour.push(alkiBeach.cookiesPerHourCalc());
 }
 
-for(let i = 0; i < 14; i++) {
+for(let i = 0; i < 16; i++) {
   alkiBeach.customerPerHour.push(alkiBeach.randomCustomerPerHour());
 }
 
