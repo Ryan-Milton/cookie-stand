@@ -52,6 +52,9 @@ console.log(seaTac);
 console.log(seattleCenter);
 console.log(capitolHill);
 console.log(alkiBeach);
+
+
+
 // var pike = {
 //   minCustomers: 23,
 //   maxCustomers: 65,
