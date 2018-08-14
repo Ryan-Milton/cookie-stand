@@ -1,5 +1,7 @@
 'use strict';
 
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+
 var pike = {
   minCustomers: 23,
   maxCustomers: 65,
@@ -40,10 +42,11 @@ pike.totalCookies.push(pike.totalCookiesCalc());
 pike.render = function() {
   var pikeUlEl = document.getElementById('pike');
   for(let i = 0; i < this.customerPerHour.length; i++) {
-  var liEl = document.createElement('li');
-  liEl.textContent = this.customerPerHour[i] + ': ' + 
+    var liEl = document.createElement('li');
+    liEl.textContent = hours[i] + ': ' + this.cookiesPerHour();
+    
   }
-}
+};
 
 var seaTac = {
   minCustomers: 3,
