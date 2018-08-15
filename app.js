@@ -99,7 +99,7 @@ function makeHeaderRow() {
 }
 
 function renderAllSales() {
-  for(var i = 0; i < allStores.length; i++) {
+  for(let i = 0; i < allStores.length; i++) {
     allStores[i].render();
   }
 }
