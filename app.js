@@ -106,3 +106,4 @@ function renderAllSales() {
 
 makeHeaderRow();
 renderAllSales();
+

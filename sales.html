@@ -5,6 +5,22 @@
     <title>Sales</title>
     <body>
       <h1>Sales Table</h1>
+      <form id="location-form">
+        <fieldset>
+          <legend>Opened a New Store? Enter it's info here!</legend>
+          <label for="where">Where: </label>
+          <input name="where" type="text" size="15" />
+          <label for="minCust">Minimum Customers: </label>
+          <input name="minCust" type="text" size="15" />
+          <label for="maxCust">Maximum Customers: </label>
+          <input name="maxCust" type="text" size="15" />
+          <label for="avgCookiesPerCustomer">Avg. Cookies Per Customer: </label>
+          <input name="avgCookiesPerCustomer" type="text" size="15" />
+          <button type="submit">Create new store!</button>
+        </fieldset>
+      </form>
+      <button id="clear-new-store">REVERT</button>
+      <ul id="store-list"></ul>
       <table id="sales"></table>
       <script src="app.js" type="text/javascript"></script>
     </body>
