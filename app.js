@@ -16,17 +16,17 @@ function Store(storeLocation, minCustomers, maxCustomers, cookiesPerCustomer) {
   this.totalCookies = [];
   allStores.push(this);
 
-  this.randomCustomerPerHour = function() {
+  Store.prototype.randomCustomerPerHour = function() {
     return Math.floor( Math.random() * (this.maxCustomers - this.minCustomers) + this.minCustomers);
   };
 
-  this.cookiesPerHourCalc = function() {
+  Store.prototype.cookiesPerHourCalc = function() {
     for(let i = 0; i < 15; i++) {
       this.cookiesPerHour.push((Math.floor(this.randomCustomerPerHour() * this.cookiesPerCustomer)));
     }
   };
 
-  this.totalCookiesCalc = function() {
+  Store.prototype.totalCookiesCalc = function() {
     var x = 0;
     for(let i = 0; i < this.cookiesPerHour.length; i++) {
       x = x + this.cookiesPerHour[i];
@@ -127,7 +127,6 @@ renderAllSales();
 makeFooterRow();
 
 var locationForm = document.getElementById('location-form');
-var clearNewStore = document.getElementById('clear-new-store');
 
 console.log(newStores);
 
