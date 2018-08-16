@@ -149,7 +149,7 @@ function handleNewStoreSubmit(event) {
 
   newLocation.totalCookiesCalc();
 
-  function makeFooterRow() {
+  function makeSubmitFooterRow() {
     var trEL = document.createElement('tr');
 
     var thEl = document.createElement('th');
@@ -157,11 +157,15 @@ function handleNewStoreSubmit(event) {
     trEL.appendChild(thEl);
 
     for(let i = 0; i < hours.length; i++) {
+      let x = 0;
       thEl = document.createElement('th');
-      thEl.textContent = pike.cookiesPerHour[i] + seaTac.cookiesPerHour[i] + seattleCenter.cookiesPerHour[i] + capitolHill.cookiesPerHour[i] + alkiBeach.cookiesPerHour[i] + newLocation.cookiesPerHour[i];
+      for (let y = 0; y <allStores.length; y++) {
+        console.log(`${allStores[y].storeLocation} ${allStores[y].cookiesPerHour[i]}`);
+        x += allStores[y].cookiesPerHour[i];
+      }
+      thEl.textContent = x;
       trEL.appendChild(thEl);
     }
-
     salesTable.appendChild(trEL);
   }
 
@@ -173,7 +177,7 @@ function handleNewStoreSubmit(event) {
   salesTable.innerHTML = '';
   makeHeaderRow();
   renderAllSales();
-  makeFooterRow();
+  makeSubmitFooterRow();
 }
 
 clearNewStore.addEventListener('click', function() {
