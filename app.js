@@ -180,10 +180,6 @@ function handleNewStoreSubmit(event) {
   makeSubmitFooterRow();
 }
 
-clearNewStore.addEventListener('click', function() {
-  clearNewStore = '';
-});
-
 locationForm.addEventListener('submit', handleNewStoreSubmit);
 
 
